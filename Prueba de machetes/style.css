@@ -1,0 +1,347 @@
+/*AUDIO-efecto de reproduccion en el cursor por encima*/
+---NADA ESPECIFICADO---
+
+
+
+
+/*AUDIO-centrado en la pagina  (grid)*/
+.NOMBREdelAUDIO2 {
+  display: grid;
+  place-items: center; /* Centra tanto vertical como horizontalmente */
+  height: 100vh; /* O un valor adecuado para tu diseño */
+}
+audio {
+  /*  Ajusta el tamaño del reproductor si es necesario */
+  width: 300px;
+  /*  Estilo opcional para el reproductor */
+  /*  background-color: #f0f0f0;  */
+  /*  border: 1px solid #ccc;  */
+  /*  padding: 10px;  */
+}
+/* Alternativa para centrar horizontalmente si place-items: center no es suficiente */
+.NOMBREdelAUDIO2 {
+  display: grid;
+  grid-template-columns: 1fr; /* Una sola columna */
+  grid-template-rows: auto 1fr auto; /* Fila para el reproductor, una flexible y otra para contenido abajo */
+  align-items: start; /* Alinea el contenido hacia arriba */
+  justify-items: center; /* Centra horizontalmente */
+}
+audio {
+  grid-row: 1; /* Coloca el reproductor en la primera fila */
+  width: 300px; /* Ajusta el ancho */
+}
+
+
+
+
+/*AUDIO-arriba en el medio  (grid)*/
+.container {
+  display: grid;
+  grid-template-columns: 1fr; /* Una sola columna */
+  grid-template-rows: auto 1fr; /* Una fila para el reproductor, otra para el resto */
+  align-items: center; /* Centra verticalmente el contenido */
+  justify-items: center; /* Centra horizontalmente el contenido */
+  height: 100vh; /* Ocupa toda la altura de la ventana */
+}
+
+.audio-player {
+  grid-column: 1; /*  Ocupa la primera columna */
+  grid-row: 1; /*  Ocupa la primera fila */
+}
+
+
+
+
+/*AUDIO-abajo en el medio  (grid)*/
+.container {
+  display: grid;
+  place-items: center; /* Alinea el contenido al final (bottom) y al centro horizontalmente */
+  height: 175vh; /* Ocupa toda la altura de la ventana */
+}
+
+audio {
+  width: 80%; /* Ajusta el ancho del reproductor */
+}
+
+
+
+
+/*AUDIO-al medio y a la izquierda  (grid)*/
+????????????
+/*AUDIO-a la derecha  (grid)*/
+????????????
+/*AUDIO-centrado en la pagina (flexbox)*/
+????????????
+/*AUDIO-arriba en el medio (flexbox)*/
+????????????
+/*AUDIO-abajo en el medio (flexbox)*/
+????????????
+/*AUDIO-a la izquierda (flexbox)*/
+????????????
+/*AUDIO-a la derecha (flexbox)*/
+????????????
+/*AUDIO-iconos interactivos*/
+????????????
+
+
+
+
+/*AUDIO-reproduccion automatica*/
+---NADA ESPECIFICADO---
+
+
+
+
+/*AUDIO-reproduccion repetitiva*/
+/*BOTON-Boton de llamada a la accion*/
+/*BOTON-Animaciones*/
+/*BOTON-buscador*/
+/*BOTON-Campo de búsqueda*/
+#search-form {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    width: 300px; /* Ajusta el ancho según necesites */
+}
+#search-input {
+    flex-grow: 1;
+    border: none;
+    outline: none;
+    padding: 5px;
+    font-size: 16px;
+}
+#search-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 16px;
+}
+#search-button:hover {
+    background-color: #0056b3;
+}
+
+
+
+
+/*BOTON-efecto al clieckear*/
+/*BOTON-efecto de cursor por encima*/
+/*BOTON-encuadres*/
+/*BOTON-Enlaces*/
+/*BOTON-Enlaces internos*/
+/*BOTON-entrada de un usuario*/
+/*BOTON-Formulario de contacto*/
+/*BOTON-Formulario de pago*/
+/*BOTON-Formulario de registro*/
+/*BOTON-en diversas posiciones*/
+/*BOTON-iconos interactivos*/
+/*BOTON-listas*/
+/*BOTON-Logotipo*/
+/*BOTON-Menu de navegación superior (completo)*/
+/* Estilos generales */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+.navbar {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.logo {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+.nav-links li {
+    margin-left: 20px;
+}
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+/* Estilos para el botón del menú (hamburguesa) */
+.menu-toggle {
+    display: none; /* Oculto por defecto en pantallas grandes */
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.menu-toggle .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: white;
+}
+/* Estilos para pantallas pequeñas (responsivo) */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none; /* Ocultar el menú desplegable por defecto */
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+        padding: 1rem;
+    }
+    .nav-links.active {
+        display: flex; /* Mostrar el menú cuando esté activo */
+    }
+    .menu-toggle {
+        display: block; /* Mostrar el botón de hamburguesa en pantallas pequeñas */
+    }
+    .nav-links li {
+        margin: 10px 0;
+    }
+}
+
+
+
+
+/*BOTON-notificador*/
+/*BOTON-vinculacion con pagos*/
+/*BOTON-carrito de compra*/
+/* style.css */
+.product-card {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin: 10px;
+    width: 200px;
+    text-align: center;
+    display: inline-block; /* O block, según tu diseño */
+}
+.add-to-cart-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.add-to-cart-btn:hover {
+    background-color: #45a049;
+}
+
+
+
+
+/*BOTON-Titulo*/
+/*BOTON-Boton de llamada a la accion (enviar)*/
+/*CABEZA DE PAGINA-nombre de la pestaña*/
+/*CAMPO DE TEXTO-vinculacion con pagos*/
+/*CAMPO DE TEXTO-Animaciones*/
+/*CAMPO DE TEXTO-buscador*/
+/*CAMPO DE TEXTO-efecto al clieckear*/
+/*CAMPO DE TEXTO-entrada de un usuario*/
+/*CAMPO DE TEXTO-Formulario de contacto*/
+/*CAMPO DE TEXTO-Formulario de pago*/
+/*CAMPO DE TEXTO-Formulario de registro*/
+/*CAMPO DE TEXTO-efecto de cursor por encima*/
+/*CAMPO DE TEXTO-Enlaces externos*/
+/*CAMPO DE TEXTO-Enlaces internos*/
+/*CAMPO DE TEXTO-diversas posiciones*/
+/*CAMPO DE TEXTO-iconos interactivos*/
+/*CAMPO DE TEXTO-listas*/
+/*CAMPO DE TEXTO-Logotipo*/
+/*CAMPO DE TEXTO-Menu de navegación*/
+/*CITA-Muestra miniatura de otra pagina*/
+/*CITA-Muestra miniatura de otra pagina*/
+/*CITA-copyright*/
+/*CITA-Vinculacion de los lenguajes*/
+/*ELEMENTO-encuadres*/
+/*ELEMENTO-cajas*/
+/*ELEMENTO-diseñar imagen en el lugar*/
+/*ELEMENTO-Animaciones*/
+/*ELEMENTO-listas*/
+/*ELEMENTO-Logotipo*/
+/*ELEMENTO-notificador*/
+/*ELEMENTO-Posicionamiento del elemento en la pagina*/
+/*ELEMENTO-formas circulares*/
+/*ELEMENTO-formas triangulares*/
+/*ELEMENTO-iconos interactivos*/
+/*ELEMENTO-formas rectangulas*/
+/*HIPERVINCULO-Vinculacion de los lenguajes*/
+/*HIPERVINCULO-Enlaces*/
+/*HIPERVINCULO-Enlaces internos*/
+/*HIPERVINCULO-Vincular con CSS*/
+/*HIPERVINCULO-Vincular con Java Script*/
+/*IMAGEN-efecto al clieckear*/
+/*IMAGEN-Animaciones*/
+/*IMAGEN-efecto de cursor por encima*/
+/*IMAGEN-enlace externo*/
+/*IMAGEN-Enlaces internos*/
+/*IMAGEN-espacio publicitario*/
+/*IMAGEN-diversas posiciones*/
+/*IMAGEN-imagen de fondo de pagina*/
+/*IMAGEN-Logotipo*/
+/*ITEMS-listas*/
+/*ITEMS-Menu de navegación*/
+/*ITEMS-Barra lateral de navegacion*/
+    .sidebar {
+        height: 100%;
+        width: 250px; /* Ancho de la barra lateral */
+        position: fixed; /* O fixed para que no se desplace */
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #f1f1f1;
+        padding-top: 20px;
+        box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+    }
+    .sidebar h2 {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .menu li {
+        list-style: none;
+        padding: 10px 15px;
+    }
+    .menu li a {
+        text-decoration: none;
+        color: #333;
+        display: block; /* Para que el área de clic sea toda la celda */
+    }
+    .menu li a:hover {
+        background-color: #ddd;
+    }
+    main {
+        margin-left: 250px; /* Ajusta esto al ancho de tu sidebar */
+        padding: 20px;
+    }
+
+
+
+
+/*PIE DE PAGINA-copyright*/
+/*SECCION-espacio publicitario*/
+/*SECCION-Menu de navegación*/
+/*SECCION-carrito de compra*/
+/*VIDEO-efecto de cursor por encima*/
+/*VIDEO-efecto de reproduccion en el cursor por encima*/
+/*VIDEO-Enlaces externos*/
+/*VIDEO-Enlaces internos*/
+/*VIDEO-espacio publicitario*/
+/*VIDEO-posiciones diversas*/
+/*VIDEO-iconos interactivos*/
